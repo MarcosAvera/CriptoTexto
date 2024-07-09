@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&display=swap');
+
+:root {
+    --corPrincipal: #F3F5FC;
+    --corSecundaria: #0A3871;
+    --fontePrincipal: "Inter", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+body {
+    background: #F3F5FC;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    width: 120px;
+    margin-top: 20px;
+}
+
+.principal {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 80px;
+}
+
+.principalConteudo {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+.principalInteracao {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.principalTextoCripto{
+    
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.tituloTexto{
+    text-align: center;
+    margin: 10px;
+}
+
+.paragrafoTexto{
+    text-align: center;
+}
+
+.principalImagem{
+    background: #ffffff;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    border-radius: 16px;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 90%;
+    padding: 10%;
+    font-family: var(--fontePrincipal);
+}
+
+
+#principalInput {
+    width: 100%;
+    height: 87%;
+    font-size: 24px;
+    padding: 30px;
+    border: none;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    outline: none;
+    resize: none;
+    background:var(--corPrincipal);
+}
+
+.principalBotoes {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    gap: 20px;
+}
+
+.principalBotaoCripto, .principalBotaoDescrip {
+    width: 50%;
+    padding: 10px;
+    border-radius: 16px;
+    border: none;
+    font-size: 1rem;
+    font-family: var(--fontePrincipal);
+    cursor: pointer;
+}
+
+.principalBotaoCripto {
+    background: #0A3871;
+    color: #f5f5f5;
+}
+
+.principalBotaoDescrip {
+    background: #D8DFE8;
+    color: var(--corSecundaria);
+}
+
+.rodape{
+    background: var(--corSecundaria);
+    color: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 3%;
+    font-family: "Montserrat", sans-serif;
+}
